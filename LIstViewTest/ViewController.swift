@@ -45,16 +45,21 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
         
         let text1 = UILabel()
         let text2 = UILabel()
+        let text3 = UILabel()
         
         text1.textColor = .black
         text2.textColor = .black
         text1.backgroundColor = .white
         text2.backgroundColor = .white
+        text3.textColor = .black
+        text3.backgroundColor = .white
         text1.translatesAutoresizingMaskIntoConstraints = false
         text2.translatesAutoresizingMaskIntoConstraints = false
+        text3.translatesAutoresizingMaskIntoConstraints = false
         
         text1.text = "Json - JSONSerialization"
         text2.text = "Json - Codable"
+        text3.text = "XML - XMLParser"
         
         
         
@@ -68,11 +73,14 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
         
         view.addSubview(text1)
         view.addSubview(text2)
+        view.addSubview(text3)
         
         text1.textAlignment = .left
         text2.textAlignment = .left
+        text3.textAlignment = .left
         text1.font = UIFont.systemFont(ofSize: 12)
         text2.font = UIFont.systemFont(ofSize: 12)
+        text3.font = UIFont.systemFont(ofSize: 12)
         
         NSLayoutConstraint.activate([
             text1.bottomAnchor.constraint(equalTo: collectionView2.topAnchor, constant: -0),
@@ -85,6 +93,9 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
             text2.leadingAnchor.constraint(equalTo: collectionView.leadingAnchor, constant: 0),
 //            text2.widthAnchor.constraint(equalToConstant: 100)
             
+            text3.topAnchor.constraint(equalTo: collectionView.bottomAnchor, constant: 70),
+            text3.heightAnchor.constraint(equalToConstant: 30),
+            text3.leadingAnchor.constraint(equalTo: collectionView.leadingAnchor, constant: 0),
         ])
 
     }
