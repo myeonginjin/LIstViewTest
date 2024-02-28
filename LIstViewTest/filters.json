@@ -1,64 +1,64 @@
 {
   "filters": [
     {
-      "name": "Bright",
-      "category": "Brightness",
+      "name": "Sepia",
+      "category": "PREMIUM",
       "effect": "brightness",
       "parameters": {
         "level": 10
       }
     },
     {
-      "name": "Dark",
-      "category": "Brightness",
+      "name": "SnowStorm",
+      "category": "PREMIUM",
       "effect": "brightness",
       "parameters": {
         "level": -10
       }
     },
     {
-      "name": "Vivid",
-      "category": "Saturation",
+      "name": "Amatorka",
+      "category": "PREMIUM",
       "effect": "saturation",
       "parameters": {
         "level": 20
       }
     },
     {
-      "name": "Monochrome",
-      "category": "Color",
+      "name": "Red Splash",
+      "category": "ART",
       "effect": "grayscale",
       "parameters": {
         "level": 100
       }
     },
     {
-      "name": "Sepia",
-      "category": "Color",
+      "name": "Green Splash",
+      "category": "ART",
       "effect": "sepia",
       "parameters": {
         "level": 50
       }
     },
     {
-      "name": "Blur",
-      "category": "Effect",
+      "name": "Blue Splash",
+      "category": "ART",
       "effect": "blur",
       "parameters": {
         "radius": 5
       }
     },
     {
-      "name": "Sharpen",
-      "category": "Effect",
+      "name": "BW200",
+      "category": "MONOTONE",
       "effect": "sharpen",
       "parameters": {
         "level": 15
       }
     },
     {
-      "name": "Contrast",
-      "category": "Contrast",
+      "name": "BW400",
+      "category": "MONOTONE",
       "effect": "contrast",
       "parameters": {
         "level": 20
