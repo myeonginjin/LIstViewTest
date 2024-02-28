@@ -1,0 +1,69 @@
+{
+  "filters": [
+    {
+      "name": "Bright",
+      "category": "Brightness",
+      "effect": "brightness",
+      "parameters": {
+        "level": 10
+      }
+    },
+    {
+      "name": "Dark",
+      "category": "Brightness",
+      "effect": "brightness",
+      "parameters": {
+        "level": -10
+      }
+    },
+    {
+      "name": "Vivid",
+      "category": "Saturation",
+      "effect": "saturation",
+      "parameters": {
+        "level": 20
+      }
+    },
+    {
+      "name": "Monochrome",
+      "category": "Color",
+      "effect": "grayscale",
+      "parameters": {
+        "level": 100
+      }
+    },
+    {
+      "name": "Sepia",
+      "category": "Color",
+      "effect": "sepia",
+      "parameters": {
+        "level": 50
+      }
+    },
+    {
+      "name": "Blur",
+      "category": "Effect",
+      "effect": "blur",
+      "parameters": {
+        "radius": 5
+      }
+    },
+    {
+      "name": "Sharpen",
+      "category": "Effect",
+      "effect": "sharpen",
+      "parameters": {
+        "level": 15
+      }
+    },
+    {
+      "name": "Contrast",
+      "category": "Contrast",
+      "effect": "contrast",
+      "parameters": {
+        "level": 20
+      }
+    }
+  ]
+}
+
