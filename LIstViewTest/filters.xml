@@ -1,0 +1,67 @@
+<filters>
+  <filter>
+    <name>Sepia</name>
+    <category>PREMIUM</category>
+    <effect>brightness</effect>
+    <parameters>
+      <level>10</level>
+    </parameters>
+  </filter>
+  <filter>
+    <name>SnowStorm</name>
+    <category>PREMIUM</category>
+    <effect>brightness</effect>
+    <parameters>
+      <level>-10</level>
+    </parameters>
+  </filter>
+  <filter>
+    <name>Amatorka</name>
+    <category>PREMIUM</category>
+    <effect>saturation</effect>
+    <parameters>
+      <level>20</level>
+    </parameters>
+  </filter>
+  <filter>
+    <name>Red Splash</name>
+    <category>ART</category>
+    <effect>grayscale</effect>
+    <parameters>
+      <level>100</level>
+    </parameters>
+  </filter>
+  <filter>
+    <name>Green Splash</name>
+    <category>ART</category>
+    <effect>sepia</effect>
+    <parameters>
+      <level>50</level>
+    </parameters>
+  </filter>
+  <filter>
+    <name>Blue Splash</name>
+    <category>ART</category>
+    <effect>blur</effect>
+    <parameters>
+      <radius>5</radius>
+    </parameters>
+  </filter>
+  <filter>
+    <name>BW200</name>
+    <category>MONOTONE</category>
+    <effect>sharpen</effect>
+    <parameters>
+      <level>15</level>
+    </parameters>
+  </filter>
+  <filter>
+    <name>BW400</name>
+    <category>MONOTONE</category>
+    <effect>contrast</effect>
+    <parameters>
+      <level>20</level>
+    </parameters>
+  </filter>
+</filters>
+
