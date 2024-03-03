@@ -43,6 +43,8 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
     var collectionView: UICollectionView!
     var collectionView2: UICollectionView!
     var collectionView3: UICollectionView!
+    
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -420,6 +422,15 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
     
 }
 
+extension ViewController {
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
+        // 첫 번째 아이템이 "Sepia"인 경우에만 왼쪽에 마진 추가
+        if let firstItem = filterList.first, firstItem.name == "Sepia" {
+            return UIEdgeInsets(top: 0, left: 20, bottom: 0, right: 0)
+        }
+        return UIEdgeInsets.zero
+    }
+}
 
 
 
@@ -429,6 +440,8 @@ class FilterButtonCell: UICollectionViewCell {
     private let thumbnailImageView = UIImageView()
     private let nameLabel = UILabel()
     private let CategoryLabel = UILabel()
+    
+    
 
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -458,6 +471,8 @@ class FilterButtonCell: UICollectionViewCell {
         nameLabel.translatesAutoresizingMaskIntoConstraints = false
         CategoryLabel.translatesAutoresizingMaskIntoConstraints = false
         
+        
+        
         NSLayoutConstraint.activate([
             thumbnailImageView.topAnchor.constraint(equalTo: contentView.topAnchor),
             thumbnailImageView.centerXAnchor.constraint(equalTo: contentView.centerXAnchor),
@@ -471,11 +486,34 @@ class FilterButtonCell: UICollectionViewCell {
             
             CategoryLabel.leadingAnchor.constraint(equalTo: nameLabel.trailingAnchor, constant: 4),
             CategoryLabel.bottomAnchor.constraint(equalTo: contentView.bottomAnchor),
-            CategoryLabel.topAnchor.constraint(equalTo: thumbnailImageView.bottomAnchor, constant: 8)
+            CategoryLabel.topAnchor.constraint(equalTo: thumbnailImageView.bottomAnchor, constant: 8),
+            
+           
         ])
     }
     
     func configure(with image: UIImage, name: String , category : String) {
+        
+        if(name == "Sepia"){
+            print("found Sepia")
+            NSLayoutConstraint.activate([
+                
+            ])
+        }
+        
+        switch category {
+        case "PREMIUM":
+            self.backgroundColor = .white
+        case "ART":
+            print("A")
+            self.backgroundColor = .brown
+        case "MONOTONE":
+            self.backgroundColor = .blue
+            print("M")
+        default:
+            print("D")
+        }
+        
         thumbnailImageView.image = image
         nameLabel.text = name
         CategoryLabel.text = category
